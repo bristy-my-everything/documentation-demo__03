@@ -1,0 +1,202 @@
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| 
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+/*==================================================
+===| 12. 
+===================================================*/
+.nav-item a {
+
+  span {
+    @include desktop3_4 {
+      display: none;
+    }
+  }
+}
+
+pre {
+  margin-bottom: 0px;
+}
+
+////////////////////////////////////////////////////
+// Home
+.doc-content {
+  background: #333;
+  border: 2px solid rgb(200, 200, 200);
+  color: #fff;
+  padding: 50px;
+
+  @include tab1 {
+    padding: 20px;
+  }
+}
+
+.doc-heading {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 50px;
+
+  h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+    color: #ccc;
+  }
+}
+
+.doc-list {
+  margin-bottom: 40px;
+  
+  h3 {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  ul li {
+    position: relative;
+    padding-left: 25px;
+
+    &::before {
+      position: absolute;
+      @include font-awesome;
+      content: "\f621";
+      left: 0;
+      top: 0;
+      font-size: 12px;
+    }
+
+    b {
+      color: #fff;
+    }
+  }
+}
+
+
+.introduction {
+  height: 100vh;
+  background: #222222;
+  color: #ccc;
+
+  h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+
+    @include tab1 {
+      font-size: 20px;
+    }
+  }
+
+  .info {
+    margin-bottom: 30px;
+
+    p {
+      @include tab1 {
+        font-size: 14px;
+      }
+    }
+  }
+
+  a.main__btn {
+    // background: #fff;
+    // color: #222222;
+    // text-transform: none;
+    margin-bottom: 30px;
+  }
+
+  h3 {
+    margin-top: 50px;
+
+    @include tab1 {
+      margin-top: 30px;
+      font-size: 18px;
+    }
+  }
+
+}
+
+
+.installation {
+  background: #343838;
+  color: #ccc;
+}
+
+.pages {
+  background: #2c2f2f;
+  color: #ccc;
+}
+
+.fonts {
+  background: #343838;
+  color: #ccc;
+}
+
+.code-area {
+  background: #ddd;
+  border: 2px solid #222;
+  color: #000;
+  font-size: 15px;
+  padding: 30px 40px;
+}
+
+.css-area {
+  background: #2c2f2f;
+  color: #ccc;
+}
+
+.js-area {
+  background: #343838;
+  color: #ccc;
+}
+
+.customization {
+  background: #2c2f2f;
+  color: #ccc;
+}
+
+.img-area {
+  margin-bottom: 50px;
+
+  h3 {
+    margin-bottom: 40px;
+  }
+}
+
+.doc-img {
+  background: #ddd;
+  padding: 50px 100px;
+  color: #222;
+
+  @include laptop1 {
+    padding: 30px 40px;
+  }
+  
+  h4 {
+    color: #222;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+}
+
+.creadits {
+  background: #343838;
+  color: #ccc;
+}
+
+.thanks {
+  height: 100vh;
+  background: #222;
+  color: #ccc;
+}
